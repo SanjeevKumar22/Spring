@@ -7,6 +7,23 @@ public class Student {
     private String studentName;
     private String studentAddress;
 
+    @Override
+    @SuppressWarnings("all")
+    public String toString() {
+        return "Student(studentId=" + this.getStudentId() + ", studentName=" + this.getStudentName() + ", studentAddress=" + this.getStudentAddress() + ")";
+    }
+
+    @SuppressWarnings("all")
+    public Student(final int studentId, final String studentName, final String studentAddress) {
+        this.studentId = studentId;
+        this.studentName = studentName;
+        this.studentAddress = studentAddress;
+    }
+
+    @SuppressWarnings("all")
+    public Student() {
+    }
+
     @SuppressWarnings("all")
     public int getStudentId() {
         return this.studentId;
