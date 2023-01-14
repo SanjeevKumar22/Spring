@@ -1,5 +1,6 @@
 package com.springcore;
 
+import lombok.*;
 
 public class Student {
     private int studentId;

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean class="com.springcore.constructor.Cert" name="certi1">
+        <constructor-arg  value="vikas certi" />
+    </bean>
+
+    <bean class="com.springcore.constructor.Person" name="person1">
+        <constructor-arg  value="vikas" />
+        <constructor-arg  value="12" />
+        <constructor-arg ref="certi1" />
+    </bean>
+    <bean class="com.springcore.constructor.Addition" name="add">
+        <constructor-arg  value="5" type="int"/>
+        <constructor-arg  value="5" type="int"/>
+    </bean>
+    <bean class="com.springcore.constructor.Addition" name="add">
+        <constructor-arg  value="5" type="int" index="0"/>
+        <constructor-arg  value="5" type="int" index="1"/>
+    </bean>
+</beans>

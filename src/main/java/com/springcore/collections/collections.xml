@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+     <bean class="com.springcore.collections.Emp" name="collections1">
+     
+        <property name="name" value="293"/>
+        
+        <!-- List -->
+        <property name="phones">
+        <list>
+        	<value>12345</value>
+        	<value>6789</value>
+        </list>
+        </property>
+        
+        <!-- Set -->
+        
+        <property name="address">
+        <set>
+        	<value>BJP</value>
+        	<value>BLR</value>
+        </set>
+        </property>
+        
+        <!-- Map -->
+        <property name="courses">
+        <map>
+        	
+        	<entry key="java" value="2"/>
+        	<entry key="py" value="2"/>
+        	
+        </map>
+        </property>
+    </bean>
+    
+</beans>
